@@ -5,12 +5,9 @@
     letter-spacing: 1px;
 }
 
-.header {
-    position: fixed;
-    width: 100%;
+.header{
     background-color: #3F72AF;
     height: 51px;
-    
 }
 
 .BarraNav{

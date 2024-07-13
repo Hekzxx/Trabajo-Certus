@@ -88,7 +88,7 @@
     background-color: #112D4E;
     height: 500px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
     width: 100%;
@@ -100,8 +100,8 @@
 }
 
 .usuario1{
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .clientes .usuario1 h1{

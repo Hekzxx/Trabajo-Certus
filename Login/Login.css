@@ -1,0 +1,52 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Black Han Sans";
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+body {
+    background-image: url("img/FondoLogin.jpeg");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    width: 100%;
+    height: 100vh;
+    margin: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login {
+    border: 1px solid #F9F7F7;
+    background-color: #F9F7F7;
+    border-radius: 41px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 750px;
+    height: 450px;
+    position: relative; /* Necesario para el pseudo-elemento */
+}
+
+.login::before {
+    content: '';
+    position: absolute; 
+    top: 25px; 
+    left: -1px; 
+    right: -1px; 
+    border: 1px solid #3F72AF; 
+    background-color: #3F72AF;
+    border-radius: 41px; 
+    z-index: -1; 
+    height: 100%; 
+    width: 100%; 
+}
+
+.login h2{
+    color: #3F72AF;
+}

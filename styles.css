@@ -60,7 +60,7 @@
 }
 
 .Quienessomos {
-    background-color: #3F72AF;
+    background-color: #DBE2EF;
     height: 400px;
     display: flex;
     flex-direction: column;
@@ -71,14 +71,14 @@
 
 .Quienessomos h1 {
     font-size: 32px;
-    color: #DBE2EF;
+    color: #3F72AF;
     width: 300px;
     margin-top: 40px;
 }
 
 .Quienessomos p {
     font-size: 12px;
-    color: #F9F7F7;
+    color: #3F72AF;
     width: 500px;
     margin-bottom: 40px;
     margin-top: 20px;

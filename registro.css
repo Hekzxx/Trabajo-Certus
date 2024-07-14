@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url("img/fondo.jpeg");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    width: 100%;
+    height: 100vh;
+    margin: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 100;
+    padding: 20px;
+    color: #3F72AF;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.registro {
+    background-color: #F9F7F7;
+    padding: 20px 0;
+    max-width: 500px;
+    width: 100%; 
+    box-shadow: 0px 0px 35px #7297AD;
+    border-radius: 30px;
+}
+
+label {
+    font-size: 0.88em;
+    line-height: 2;
+    color: #3F72AF;
+}
+
+.registro_input {
+    padding: 6px 20px;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 12px;
+    border: none;
+    border-left: 2px solid #7297AD;
+    border-radius: 5px;
+}
+
+.submit {
+    text-align: center;
+}
+
+.submit input[type="submit"] {
+    margin-top: 20px;
+    display: block;
+    margin: 20px auto;
+    padding: 8px 16px;
+    width: 92%;
+    background-color: #3F72AF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

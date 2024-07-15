@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: url("img/FondoLogin.jpeg");
+    background-image: url("../Login/img/FondoLogin.jpeg");
     background-size: cover; 
     background-repeat: no-repeat; 
     background-position: center center; 
@@ -99,7 +99,7 @@ body {
 .link-container {
     margin-top: 15px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 80%;
 }
 

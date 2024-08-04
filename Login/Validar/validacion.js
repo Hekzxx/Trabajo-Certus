@@ -11,10 +11,12 @@ document.addEventListener('DOMContentLoaded', function() {
         if (username === storedUsername && password === storedPassword) {
             window.location.href = '../Catalogo/catalogo.html';
         } else {
-            if (username !== storedUsername) {
-                alert('Usuario incorrecto.');
+            if(username !== storedUsername && password !==storedPassword) {
+                alert('¡Usuario y Contraseña incorrectas!');
+            } else if (username !== storedUsername) {
+                alert('¡Usuario incorrecto!');
             } else if (password !== storedPassword) {
-                alert('Contraseña incorrecta.');
+                alert('¡Contraseña incorrecta!');
             }
         }
     });

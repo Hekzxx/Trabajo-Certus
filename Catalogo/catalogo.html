@@ -3,26 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo de Productos</title>
-    <link rel="stylesheet" href="catalogo.css">
+    <link rel="stylesheet" href="catalogo.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>Catalogo</title>
 </head>
 <body>
-    <header>
-        <h1>Catálogo de Productos</h1>
-        <nav>
-            <a href="../Login/Login.html">Iniciar Sesión</a>
-            <a href="../Registro/registro.html">Crear Cuenta</a>
-            <a href="../landingpage/PrimeraPagina.html">Landing Page</a>
-        </nav>
+    <!--Cabecera-->
+    <header id="header">
+        <div class="wrap">
+            <div id="logo">
+                <h3>CompuTech</h3>
+            </div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="../landingpage/PrimeraPagina.html">Inicio</a></li>
+                    <li><a href="#">Graficas</a></li>
+                    <li><a href="#">Procesadores</a></li>
+                    <li><a href="#">Memoria Ram</a></li>
+                </ul>
+            </nav>
+        </div> 
     </header>
-    <main>
-        <section>
-            <h2>Productos Destacados</h2>
+    <!--Fin de Cabecera-->
+
+    <section class="wrap wrap-content">
+        <section id="info">
+            <!--Inicio Banner-->
+            <div id="banner">
+                <h1>Catalogo de Componentes</h1>
+            </div>
+            <!--Fin del Banner-->
+
+            <!--Inicio de Tarjetas-->
+            <div id="cards">
+                <div class="card">
+                    <img src="imgComponentes/Rtx3080.png" alt="NVIDIA GeForce RTX 3080" class="product-image"/>
+                    <h2 class="category">NVIDIA GeForce RTX 3080</h2>
+                    <p class="price">$700</p>
+                    <p class="description">Tarjeta gráfica de última generación para los juegos más exigentes.</p>
+                    <button class="add-to-cart" data-product="NVIDIA GeForce RTX 3080" data-price="700">Agregar al carrito</button>
+                </div>
+                <div class="card">
+                    <img src="imgComponentes/AMD Radeon RX 6800 XT.png" alt="AMD Radeon RX 6800 XT" class="product-image"/>
+                    <h2 class="category">AMD Radeon RX 6800 XT</h2>
+                    <p class="price">$650</p>
+                    <p class="description">Gráfica de alto rendimiento con 16 GB de memoria GDDR6.</p>
+                    <button class="add-to-cart" data-product="AMD Radeon RX 6800 XT" data-price="650">Agregar al carrito</button>
+                </div>
+                <div class="card">
+                    <img src="imgComponentes/RTX3070.png" alt="NVIDIA GeForce RTX 3070" class="product-image"/>
+                    <h2 class="category">NVIDIA GeForce RTX 3070</h2>
+                    <p class="price">$500</p>
+                    <p class="description">Tarjeta gráfica potente para juegos en alta resolución.</p>
+                    <button class="add-to-cart" data-product="NVIDIA GeForce RTX 3070" data-price="500">Agregar al carrito</button>
+                </div>
+                <div class="card">
+                    <img src="imgComponentes/RadeonRX6700XT.png" alt="AMD Radeon RX 6700 XT" class="product-image"/>
+                    <h2 class="category">AMD Radeon RX 6700 XT</h2>
+                    <p class="price">$550</p>
+                    <p class="description">Tarjeta gráfica de alto rendimiento para gaming y diseño.</p>
+                    <button class="add-to-cart" data-product="AMD Radeon RX 6700 XT" data-price="550">Agregar al carrito</button>
+                </div>
+                <div class="card">
+                    <img src="imgComponentes/rtx3060ti.png" alt="EVGA GeForce RTX 3060 Ti" class="product-image"/>
+                    <h2 class="category">EVGA GeForce RTX 3060 Ti</h2>
+                    <p class="price">$400</p>
+                    <p class="description">Tarjeta gráfica para gaming con 8GB de memoria GDDR6.</p>
+                    <button class="add-to-cart" data-product="EVGA GeForce RTX 3060 Ti" data-price="400">Agregar al carrito</button>
+                </div>
+
+                <div class="card">
+                    <img src="imgComponentes/I9.png" alt="Intel Core i9" class="product-image"/>
+                    <h2 class="category">Intel Core i9</h2>
+                    <p class="price">$500</p>
+                    <p class="description">Procesador de alto rendimiento con 8 núcleos y 16 hilos.</p>
+                    <button class="add-to-cart" data-product="Intel Core i9" data-price="500">Agregar al carrito</button>
+                </div>
+                <div class="card">
+                    <img src="imgComponentes/Ryzen7.png" alt="AMD Ryzen 7" class="product-image"/>
+                    <h2 class="category">AMD Ryzen 7</h2>
+                    <p class="price">$400</p>
+                    <p class="description">Procesador potente con 8 núcleos y 16 hilos, ideal para gaming.</p>
+                    <button class="add-to-cart" data-product="AMD Ryzen 7" data-price="400">Agregar al carrito</button>
+                </div>
+                <div class="card">
+                    <img src="imgComponentes/I7.png" alt="Intel Core i7" class="product-image"/>
+                    <h2 class="category">Intel Core i7</h2>
+                    <p class="price">$350</p>
+                    <p class="description">Procesador de alto rendimiento con 8 núcleos y 16 hilos.</p>
+                    <button class="add-to-cart" data-product="Intel Core i7" data-price="350">Agregar al carrito</button>
+                </div>
+                <div class="card">
+                    <img src="imgComponentes/Ryzen5.png" alt="AMD Ryzen 5" class="product-image"/>
+                    <h2 class="category">AMD Ryzen 5</h2>
+                    <p class="price">$300</p>
+                    <p class="description">Procesador con 6 núcleos y 12 hilos, ideal para tareas múltiples.</p>
+                    <button class="add-to-cart" data-product="AMD Ryzen 5" data-price="300">Agregar al carrito</button>
+                </div>
+                <div class="card">
+                    <img src="imgComponentes/Ryzen9.png" alt="AMD Ryzen 9" class="product-image"/>
+                    <h2 class="category">AMD Ryzen 9</h2>
+                    <p class="price">$600</p>
+                    <p class="description">Procesador de alto rendimiento con 12 núcleos y 24 hilos.</p>
+                    <button class="add-to-cart" data-product="AMD Ryzen 9" data-price="600">Agregar al carrito</button>
+                </div>
+
+                <div class="card">
+                    <img src="imgComponentes/Corsairvengeancelpx16gb.png" alt="Corsair Vengeance LPX 16GB" class="product-image"/>
+                    <h2 class="category">Corsair Vengeance LPX 16GB</h2>
+                    <p class="price">$100</p>
+                    <p class="description">Memoria RAM DDR4 de 16GB, ideal para multitarea y gaming.</p>
+                    <button class="add-to-cart" data-product="Corsair Vengeance LPX 16GB" data-price="100">Agregar al carrito</button>
+                </div>
+                <div class="card">
+                    <img src="imgComponentes/g-skill-trident-z5-rgb-32gb-16.png" alt="G.Skill Trident Z RGB 32GB" class="product-image"/>
+                    <h2 class="category">G.Skill Trident Z RGB 32GB</h2>
+                    <p class="price">$200</p>
+                    <p class="description">Memoria RAM DDR4 de 32GB con iluminación RGB personalizable.</p>
+                    <button class="add-to-cart" data-product="G.Skill Trident Z RGB 32GB" data-price="200">Agregar al carrito</button>
+                </div>
+                <div class="card">
+                    <img src="imgComponentes/kingston-fury-beast-16gb-ddr4.png" alt="Kingston HyperX Fury 16GB" class="product-image"/>
+                    <h2 class="category">Kingston HyperX Fury 16GB</h2>
+                    <p class="price">$110</p>
+                    <p class="description">Memoria RAM DDR4 de 16GB para alto rendimiento.</p>
+                    <button class="add-to-cart" data-product="Kingston HyperX Fury 16GB" data-price="110">Agregar al carrito</button>
+                </div>
+                <div class="card">
+                    <img src="imgComponentes/Crucialballistix.png" alt="Crucial Ballistix 8GB" class="product-image"/>
+                    <h2 class="category">Crucial Ballistix 8GB</h2>
+                    <p class="price">$70</p>
+                    <p class="description">Memoria RAM DDR4 de 8GB, ideal para sistemas de gama media.</p>
+                    <button class="add-to-cart" data-product="Crucial Ballistix 8GB" data-price="70">Agregar al carrito</button>
+                </div>
+                <div class="card">
+                    <img src="imgComponentes/teantfircextrene.png" alt="Team T-Force Xtreme 16GB" class="product-image"/>
+                    <h2 class="category">Team T-Force Xtreme 16GB</h2>
+                    <p class="price">$120</p>
+                    <p class="description">Memoria RAM DDR4 de 16GB con rendimiento y estabilidad.</p>
+                    <button class="add-to-cart" data-product="Team T-Force Xtreme 16GB" data-price="120">Agregar al carrito</button>
+                </div>
+                
+            </div>
+            <!--Fin de Tarjetas-->
         </section>
-    </main>
+    </section>
+
+    <!-- Carrito en la barra lateral -->
+    <section id="cart-sidebar">
+        <h2>Carrito de Compras</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="total">0</span></p>
+    </section>
+
+    <script src="catalogo.js"></script>
 </body>
 </html>
-
-
-
-

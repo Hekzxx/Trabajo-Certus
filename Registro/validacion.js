@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (genero === '') {
             errors.push('Debe seleccionar un género.');
         }
-
+        //----------------------------------------------------------------
         for (let i = 0; i < localStorage.length; i++) {
             const key = localStorage.key(i);
             const storedUser = JSON.parse(localStorage.getItem(key));

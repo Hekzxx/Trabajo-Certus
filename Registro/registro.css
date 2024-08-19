@@ -50,12 +50,22 @@ body {
 .login h2 {
     color: #3F72AF;
     margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; /* Espacio entre las columnas */
+    width: 100%; /* Ajusta el ancho del formulario */
+    max-width: 600px; /* Ancho máximo del formulario */
+    margin: 0 auto; /* Centra el formulario */
 }
 
 .input-container {
     margin-bottom: 15px;
     text-align: left;
-    width: 80%;
+    width: 100%; /* El contenedor ocupa todo el ancho de la columna */
 }
 
 .input-container label {
@@ -66,7 +76,7 @@ body {
 }
 
 .input-container input {
-    width: 100%;
+    width: 85%; /* El campo de entrada ocupa todo el ancho del contenedor */
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #E4E4E4;
@@ -79,8 +89,7 @@ body {
 }
 
 .button-container {
-    margin-top: 20px;
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: center;
 }
@@ -97,9 +106,9 @@ body {
 }
 
 .link-container {
-    margin-top: 15px;
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 80%;
 }
 
@@ -107,3 +116,27 @@ body {
     color: #3F72AF;
     text-decoration: none;
 }
+
+p {
+    color: #3F72AF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin: 0;
+}
+
+.checkbox-container label {
+    color: #3F72AF;
+    font-weight: bold;
+    margin: 0;
+    margin-right: 5px;
+}
+

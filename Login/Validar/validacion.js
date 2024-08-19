@@ -2,11 +2,10 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('form').addEventListener('submit', function(event) {
         event.preventDefault();
         
-        const username = document.querySelector('#username').value;
-        const password = document.querySelector('#password').value;
+        const username = document.querySelector('#username').value.trim();
+        const password = document.querySelector('#password').value.trim();
         
-        const storedUsername = localStorage.getItem('username');
-        const storedPassword = localStorage.getItem('password');
+        const storedUser = JSON.parse(localStorage.getItem(username));
         
         if (username === "" && password === "") {
             alert('¡Por favor ingrese su usuario y contraseña!');
@@ -14,19 +13,18 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('¡Por favor ingrese su usuario!');
         } else if (username !== "" && password === "") {
             alert('¡Por favor ingrese su contraseña!');
-        } else if (username === storedUsername && password === storedPassword) {
+        } else if (storedUser && storedUser.password === password) {
             window.location.href = '../Catalogo/catalogo.html';
         } else {
-            if(username !== storedUsername && password !==storedPassword) {
-                alert('¡Usuario y Contraseña incorrectas!');
-            } else if (username !== storedUsername) {
+            if(!storedUser) {
                 alert('¡Usuario incorrecto!');
-            } else if (password !== storedPassword) {
+            } else if (storedUser.password !== password) {
                 alert('¡Contraseña incorrecta!');
             }
         }
     });
 });
+
 
 
 

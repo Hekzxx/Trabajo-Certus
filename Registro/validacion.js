@@ -43,19 +43,26 @@ document.addEventListener('DOMContentLoaded', function() {
         if (genero === '') {
             errors.push('Debe seleccionar un género.');
         }
+
         //----------------------------------------------------------------
         for (let i = 0; i < localStorage.length; i++) {
             const key = localStorage.key(i);
-            const storedUser = JSON.parse(localStorage.getItem(key));
-
-            if (storedUser.username === username) {
-                errors.push('Ya existe una cuenta con este nombre de usuario.');
-            }
-            if (storedUser.correo === correo) {
-                errors.push('Ya existe una cuenta con este correo electrónico.');
-            }
-            if (storedUser.telefono === telefono) {
-                errors.push('Ya existe una cuenta con este número de teléfono.');
+            const storedUserJSON = localStorage.getItem(key);
+            
+            try {
+                const storedUser = JSON.parse(storedUserJSON);
+                
+                if (storedUser.username === username) {
+                    errors.push('Ya existe una cuenta con este nombre de usuario.');
+                }
+                if (storedUser.correo === correo) {
+                    errors.push('Ya existe una cuenta con este correo electrónico.');
+                }
+                if (storedUser.telefono === telefono) {
+                    errors.push('Ya existe una cuenta con este número de teléfono.');
+                }
+            } catch (error) {
+                console.error('Error al parsear JSON de localStorage:', error);
             }
         }
 
@@ -78,5 +85,3 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
-
-
